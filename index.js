@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 var mqtt = require('mqtt')
 var fs = require('fs');
 
-var client = mqtt.connect('mqtt:/iot.eclipse.org', {username:'himanshu', password:'starks123'});
+var client = mqtt.connect('mqtt:/www.mosquitto.org', {username:'himanshu', password:'starks123'});
 
 client.subscribe('/bot/status')
 client.on('message', function (topic, message) {
