@@ -54,6 +54,7 @@ restService.post('/hookbot', function (req, res) {
                                             case "right":
                                                 client.publish('/bot', 'right')
                                                 client.publish('/bot/status', 'going right')
+						break;
                                             case "forward":
                                                 client.publish('/bot', 'fward')
                                                 client.publish('/bot/status', 'going forward')
