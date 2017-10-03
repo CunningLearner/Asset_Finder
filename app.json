@@ -1,0 +1,7 @@
+{
+  "name": "Telepresence Robot",
+  "description": "Controlled via internet bot",
+  "repository": "https://github.com/CunningLearner/Telepresence",
+  "logo": "http://xvir.github.io/img/apiai.png",
+  "keywords": ["api.ai", "natural language"]
+}
