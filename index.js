@@ -66,6 +66,7 @@ restService.post('/hookbot', function (req, res) {
                                             case "pause":
                                                 client.publish('/bot', 'pause')
                                                 client.publish('/bot/status', 'getting paused')
+						break;
                                                 default:
                                                 "."
                                         
