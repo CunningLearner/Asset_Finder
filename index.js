@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 var mqtt = require('mqtt')
 var fs = require('fs');
 
-var client = mqtt.connect('mqtt://www.mosquitto.org', {username:'himanshu', password:'starks123'});
+var client = mqtt.connect('mqtt://iot.eclipse.org', {username:'himanshu', password:'starks123'});
 
 client.subscribe('/bot/status')
 client.on('message', function (topic, message) {
@@ -48,12 +48,12 @@ restService.post('/hookbot', function (req, res) {
                     speech += requestBody.result.resolvedQuery;
                                 switch(requestBody.result.resolvedQuery){
                                             case "left":
-                                                client.publish('/bot', 'leftt')
-                                                client.publish('/bot/status', 'going left')
+                                                client.publish('/bot', 'keyss')
+                                                client.publish('/bot/status', 'finding your keys')
                                                 break;
                                             case "right":
-                                                client.publish('/bot', 'right')
-                                                client.publish('/bot/status', 'going right')
+                                                client.publish('/bot', 'walet')
+                                                client.publish('/bot/status', 'finding your wallet')
 						break;
                                             case "forward":
                                                 client.publish('/bot', 'fward')
